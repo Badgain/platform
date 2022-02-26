@@ -5,7 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
-	"platform/database/models"
+
+	"github.com/Badgain/platform/database/models"
 )
 
 var (

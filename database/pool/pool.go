@@ -2,7 +2,8 @@ package pool
 
 import (
 	"fmt"
-	"platform/database/models"
+
+	"github.com/Badgain/platform/database/models"
 )
 
 const (

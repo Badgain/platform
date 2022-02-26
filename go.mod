@@ -1,4 +1,4 @@
-module platform
+module github.com/Badgain/platform
 
 go 1.17
 

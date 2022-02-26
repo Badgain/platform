@@ -6,8 +6,9 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
-	"platform/config"
-	"platform/server/controlls"
+
+	"github.com/Badgain/platform/config"
+	"github.com/Badgain/platform/server/controlls"
 	"github.com/gorilla/mux"
 )
 
@@ -22,12 +23,12 @@ func SetRoutes(rt *mux.Router, ctrl controlls.RouteController, middlewares ...mu
 func SetupServer(controllers []controlls.RouteController, middlewares ...mux.MiddlewareFunc) (*Server, error) {
 	r := mux.NewRouter()
 
-	for _, mdw := range middlewares{
+	for _, mdw := range middlewares {
 		r.Use(mdw)
 	}
 
 	for _, control := range controllers {
-		SetRoutes(r, control,middlewares...)
+		SetRoutes(r, control, middlewares...)
 	}
 
 	addr := fmt.Sprintf("%s:%d", config.GlobalConfig.Host, config.GlobalConfig.Port)

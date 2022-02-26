@@ -2,7 +2,8 @@ package services
 
 import (
 	"errors"
-	"platform/database/models"
+
+	"github.com/Badgain/platform/database/models"
 )
 
 var (

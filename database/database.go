@@ -4,10 +4,11 @@ import (
 	"database/sql"
 	"errors"
 	"fmt"
-	"platform/config"
-	"platform/database/models"
-	"platform/logger"
 	"strings"
+
+	"github.com/Badgain/platform/config"
+	"github.com/Badgain/platform/database/models"
+	"github.com/Badgain/platform/logger"
 
 	_ "github.com/lib/pq"
 )

@@ -2,13 +2,14 @@ package platform
 
 import (
 	"fmt"
-	"platform/config"
-	"platform/database/models"
-	"platform/database/pool"
-	"platform/logger"
-	"platform/server"
-	"platform/server/controlls"
-	"platform/services"
+
+	"github.com/Badgain/platform/config"
+	"github.com/Badgain/platform/database/models"
+	"github.com/Badgain/platform/database/pool"
+	"github.com/Badgain/platform/logger"
+	"github.com/Badgain/platform/server"
+	"github.com/Badgain/platform/server/controlls"
+	"github.com/Badgain/platform/services"
 
 	"github.com/gorilla/mux"
 )
