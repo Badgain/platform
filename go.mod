@@ -1,4 +1,4 @@
-module platform
+module github.com/Badgain/go-service-platfrom
 
 go 1.17
 
